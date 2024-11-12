@@ -1,7 +1,4 @@
-<H3>Name: A joans jay authers </H3>
-<H3>Reg No: 212221240019</H3>
-<H3>EX. NO.4</H3>
-<H3>DATE: 11/3/24</H3>
+
 <H1 ALIGN =CENTER> Implementation of Hidden Markov Model</H1>
 
 ## Aim:
