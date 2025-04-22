@@ -1,6 +1,7 @@
 
-<H1 ALIGN =CENTER> Implementation of Hidden Markov Model</H1>
-
+## NAME:YUGABHARATHI M
+## REGISTER NO:212224230314
+## DATE:
 ## Aim:
 
 Construct a Python code to find the sequence of hidden states by the known sequence of observances using Hidden Markov Model. Consider two hidden states Sunny and Rainy with observable states,happy and sad.
